@@ -1,14 +1,18 @@
 # Document Vision Analyzer
 
+## 📋 Quick Summary
+
+> 🔍 **Document Vision Analyzer** 是一款 AI 驅動的文件視覺分析工具，超越傳統 OCR 的純文字擷取，提供三種智慧分析模式。📝 **OCR 模式**精確提取圖片中的所有文字；🖼️ **描述模式**生成文件的自然語言視覺描述；❓ **分析模式**支援針對文件內容的開放式問答。🔒 最大亮點：所有推理完全在本地執行！採用 Ollama 視覺模型（glm-ocr），無需雲端 API、數據不離開你的網路、零額外費用。⚡ 基於 Next.js 16 App Router 構建，搭配拖放上傳、即時預覽、推理進度指示器及一鍵複製功能。🌙 深色極簡 UI 設計，專為專注的文件工作場景優化。🎯 適合處理收據、截圖、手寫筆記、街頭標誌等各類圖像的文字識別與語義理解，是注重隱私與離線使用的文件分析利器！
+
 **AI-Powered OCR, Visual Description, and Semantic Analysis -- Beyond Text Extraction**
 
 ---
 
-## Why This Exists
+## 💡 Why This Exists
 
 Traditional OCR tools extract text and stop there. This project goes further -- it provides three distinct modes of document intelligence: precise text extraction (OCR), rich visual description (what does the document look like and contain), and open-ended semantic analysis (ask any question about the document). Powered by a local Ollama vision model, all processing stays on your machine. No cloud APIs, no data leaving your network, no per-request costs.
 
-## Architecture
+## 🏗️ Architecture
 
 ```
 User uploads image (document, screenshot, sign, handwriting, photo)
@@ -55,7 +59,7 @@ User uploads image (document, screenshot, sign, handwriting, photo)
 - **One-click clipboard copy** for all results
 - **Dark, minimal UI** designed for focused document work
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -65,7 +69,7 @@ User uploads image (document, screenshot, sign, handwriting, photo)
 | Language | TypeScript |
 | Runtime | Node.js (API routes with server-side processing) |
 
-## Quick Start
+## 🏁 Quick Start
 
 ```bash
 # 1. Install and start Ollama with a vision model
@@ -82,7 +86,7 @@ Open [http://localhost:3000](http://localhost:3000) -- upload any image and sele
 
 > **Prerequisite:** [Ollama](https://ollama.com/) must be installed and running locally. The `glm-ocr` model (or any Ollama vision-capable model) must be pulled before first use.
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 document-vision-analyzer/
